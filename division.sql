@@ -1,3 +1,6 @@
+/*
+ * 2 examples of ways we can implement division queries in SQL.
+ */
 /* Get all menu items from restaurant 1 (that appeared in all orders?) */
 (SELECT name
   FROM menu_item m
