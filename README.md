@@ -12,6 +12,6 @@ This repository represents the backend server for our app, fully implemented wit
 
 ## Schema
 
-The database was made with a self-hosted PostgreSQL instance and the entire server was made so that it could be containerized and deployed with Docker. The schema can be found below, where underlined items constitute primary keys and thick arrows represent unique relationships.
+The database was made with a self-hosted PostgreSQL instance and the entire server was made so that it could be containerized and deployed with Docker. The schema can be found below, where underlined items constitute primary keys and thick arrows represent unique (exactly one) relationships.
 
 ![er-diagram](/assets/er-diagram.png)
