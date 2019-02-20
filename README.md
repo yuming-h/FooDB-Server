@@ -1,4 +1,4 @@
-# FooDB-Client
+# FooDB-Server
 
 FooDB is a term-long project made in CPSC 304 to demonstrate good design for relational databases. The idea was to create a system to model a food delivery service somewhat similar to Foodora, UberEats, etc. We had to consider facets like encryption for passwords, live delivery status, and more in order to create an app that people could actually use.
 
