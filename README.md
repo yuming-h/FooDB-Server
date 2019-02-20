@@ -14,4 +14,4 @@ This repository represents the backend server for our app, fully implemented wit
 
 The database was made with a self-hosted PostgreSQL instance and the entire server was made so that it could be containerized and deployed with Docker. The schema can be found below, where underlined items constitute primary keys and thick arrows represent unique relationships.
 
-![er-diagram](/Users/yuming/Undergrad/2018WT1/CPSC304/project/FooDB-Server/assets/er-diagram.png)
+![er-diagram](/assets/er-diagram.png)
