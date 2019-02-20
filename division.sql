@@ -1,7 +1,7 @@
-/* Get all menu items from restaurant 1 */
+/* Get all menu items from restaurant 1 (that appeared in all orders?) */
 (SELECT name
   FROM menu_item m
-  WHERE m.restaurant_id = 1)
+  WHERE m.restaurant_id = 1
 EXCEPT /* Subtract bad items (items which did not appear in all orders) */
 (SELECT name
   FROM (
@@ -16,3 +16,19 @@ EXCEPT /* Subtract bad items (items which did not appear in all orders) */
         AND oi1.restaurant_id = m3.restaurant_id
         AND oi1.menuitem_name = m3.name))
   AS bad)
+);
+
+(SELECT name 
+FROM menu_item m 
+WHERE m.restaurant_id = 1 AND NOT EXISTS (
+  (SELECT o.order_id 
+  FROM "order" o, restaurant r 
+  WHERE o.restaurant_id = r.restaurant_id and r.restaurant_id = 1
+  ) EXCEPT
+  (SELECT o2.order_id
+  FROM order_item o2
+  WHERE o2.menuitem_name = m.name
+)
+)
+);
+
