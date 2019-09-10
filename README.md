@@ -17,7 +17,7 @@ The database was made with a self-hosted PostgreSQL instance. The schema can be 
 ![er-diagram](/assets/er-diagram.png)
 
 ### Normalization
-Our design isnormalized to Boyce-Codd Normal Form (BCNF). The primary keys for most of the relations have uniquely generated IDs (thanks PostgreSQL!) which determine all other keys for the given relation. Take User for example: each User is identified by a unique user_id, which determines all the other user info, i.e. user_id -> address, name. phone_num, lat, lon. Clearly, the relation is in BCNF since this is the only functional dependency, and user_id is a (super)key. The same logic can be applied to every other table with a unique ID.
+Our design is normalized to Boyce-Codd Normal Form (BCNF). The primary keys for most of the relations have uniquely generated IDs (thanks PostgreSQL!) which determine all other keys for the given relation. Take User for example: each User is identified by a unique user_id, which determines all the other user info, i.e. user_id -> address, name. phone_num, lat, lon. Clearly, the relation is in BCNF since this is the only functional dependency, and user_id is a (super)key. The same logic can be applied to every other table with a unique ID.
 
 ```
 rtDeliverer(deliverer_id, lat, lon) 
