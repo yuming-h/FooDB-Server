@@ -1,6 +1,6 @@
 # FooDB-Server
 
-FooDB is a capstone project made as part of CPSC 304 to demonstrate good design for relational databases. The idea was to create a system to model a food delivery service somewhat similar to Foodora, UberEats, etc. We had to consider facets like encryption for passwords, live delivery status, and more in order to create an app that people could actually use.
+FooDB is a capstone project made as part of CPSC 304 to embody relational database theory into a real application. The idea was to create a system to model a food delivery service somewhat similar to Foodora, UberEats, etc. We had to consider facets like encryption for passwords, live delivery status, and more in order to create an app that people could actually use.
 
 
 
